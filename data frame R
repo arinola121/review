@@ -1,0 +1,7 @@
+a <- list(name="lola", age=22, female=FALSE,role="cleaner", years=2.8)
+b <- list(name="jane", age=24, female=TRUE,role="technitan", years=1.2)
+c <- list(name="adora", age=26, female=FALSE,role="manager", years=3.5)
+d <- list(name="craig", age=32, female=FALSE,role="quality", years=2.4)
+e <- list(name="jon", age=27, female=TRUE,role="assistant", years=6.4)
+
+print(rbind(a,b,c,d,e))
