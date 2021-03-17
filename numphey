@@ -1,0 +1,61 @@
+#Create a 1D array of numbers from 0 to 9
+import numpy as np
+array = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(array)
+
+
+#Create a 3×3 NumPy array of all Boolean value Trues
+array = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, ])
+new_array = array.reshape(3,3)
+print(new_array)
+
+:
+#Extract all odd numbers from array of 1-10
+array = np.arange(2, 11, 2)
+print(array)
+
+#Replace all odd numbers in an array of 1-10 with the value -1
+array = np.arange(1, 11, 1)
+array[array%2==1] = -1
+print(array)
+
+#Convert a 1D array to a 2D array with 2 rows
+array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+new_array = array.reshape(2,5)
+print(new_array)
+
+# column
+
+import numpy as np
+a = np.arange(1,5).reshape (2,2)
+b = np.arange(5,9).reshape (2,2)
+c = np.dot(a,b)
+print(c)
+e = np.sum(c, axis = 0)
+print(e)
+
+
+#Create two arrays a and b, stack these two arrays vertically use the np.dot and np.sum to calculate totals
+# row
+
+a = np.arange(1,5).reshape (2,2)
+b = np.arange(5,9).reshape (2,2)
+c = np.dot(a,b)
+print(c)
+e = np.sum(c, axis = 1)
+print(e)
+
+
+# In two arrays a ( 1,2,3,4,5) and b ( 4,5,6,7,8,9) – remove all repeating items present in array b
+import numpy as np
+arrays = [[1,2,3,4,5], [4,5,6,7,8,]]
+unique_numbers = np.unique(arrays)
+print(unique_numbers)
+
+
+
+#Get all items between 5 and 10 from a and b and sum them together
+arrays = [[1,2,3,4,5], [4,5,6,7,8,]]
+unique_numbers = np.unique(arrays)
+sum_together = np.sum(unique_numbers[4:9])
+print(unique_numbers[4:9], sum_together)
